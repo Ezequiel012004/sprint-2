@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conectados al aprendizaje</title>
     <link rel="stylesheet" href="styles/style.css">
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,48 +18,105 @@
             <h1>Bienvenido a esta increible pagina</h1>
         </header>
     </main>
-    <p></p>
-    <nav class="conteiner-nav">
+    <nav class="menu-barra">
         <div>
             <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Menu
                 </button>
                 <div class="dropdown-menu">
                     <ul id="change-color">
-                        <li><a href="">Contenidos</a></li>
-                        <li><a href="index.html">Ejercicios</a></li>
-                        <li><a href="page\comentarios.html">Comentarios</a></li>
+                        <li><a href="page/contenidos.html" class="linkeos">Contenidos</a></li>
+                        <li><a href="index.html" class="linkeos">Ejercicios</a></li>
+                        <li><a href="page/comentarios.html" class="linkeos">Comentarios</a></li>
                     </ul>
+                </div>
             </div>
         </div>
     </nav>
     <section>
-        carrusel
+        <div class="carrusel">
+            <img src="" alt="">
+        </div>
+        <div class="carrusel">
+            <img src="" alt="">
+        </div>
+        <div class="carrusel">
+            <img src="" alt="">
+        </div>
     </section>
-    <div class="form">
-        <p>Esto es un form checkbox</p>
-        <form action="" method="">
-            <p>¿Qué es Python?</p>
-            <label for="option1">si: </label>
-            <input type="checkbox" name="option1" id="option1" />
-            <label for="option2">no: </label>
-            <input type="checkbox" name="option2" id="option2" />
-            <br>
-            <input type="submit" />
-        </form>
+    <div class="container-quiz">
+        <section>
+            <h3>1-¿Qué es python?</h3>
+            <label class="select">
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+            <label class="select">
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+        </section>
+        <section>
+            <h3>2-¿Qué es python?</h3>
+            <label class="select">
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+            <label class="select">
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+        </section>
+        <section>
+            <h3>3-¿Qué es python?</h3>
+            <label class="select">
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+            <label class="select">
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+        </section>
+        <section>
+            <h3>4-¿Qué es python?</h3>
+            <label class="select">
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+            <label class="select">
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+        </section>
+        <section>
+            <h3>5-¿Qué es python?</h3>
+            <label class="select">
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+            <label class="select">
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Es un lenguaje de programacion el
+                cual consiste
+            </label>
+        </section>
+        <button onclick="corregir()">Test</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
     </div>
     <footer>
         <div class="container-bottom">
             <ul>
-                <li id="change-color"><a href="mailto:ezequielcarbonell3@gmail.com">Correo electronico del creador de la
-                    pagina</a></li>
-                    <li>Contacto: 11-22323120</li>
-                    <li>Red social</li>
-                </ul>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                <li id="change-color"><a href="mailto:ezequielcarbonell3@gmail.com" class="linkeos">Correo electronico del creador de la
+                        pagina</a></li>
+                <li>Contacto: 11-22323120</li>
+                <li>Red social</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -46,6 +46,11 @@ body {
     top: -10px;
 
 }
+.dropdown-menu{
+    display: flex;
+    margin-left: 1px;
+    position: relative;
+}
 
 .image {
     display: inline block;
@@ -59,7 +64,7 @@ body {
     text-align: right;
 }
 
-.conteiner-nav {
+.menu-barra {
     display: flex;
     line-height: 30px;
     border: 3px solid black;
@@ -71,6 +76,17 @@ body {
 
 }
 
+.container-quiz{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select:hover{
+    color: gold;
+}
+
 .form{
     display: flex;
     text-align: center;
@@ -78,8 +94,13 @@ body {
     justify-content: center;
 }
 
-a {
+li{
+    list-style: none;
+}
+
+.linkeos {
     color: gold;
+    text-decoration: none;
 }
 
 .container-bottom {
